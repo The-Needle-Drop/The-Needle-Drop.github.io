@@ -82,10 +82,12 @@
 
               <div class="post-img">
                 <!-- Insert a cool lloking image here.-->
-                <img src="https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/cms/1128670106OpticalEngineer.jpg" class="img-fluid">
+                <img src="../assets/img/blog/light_on.png" class="img-fluid"  style="width:25%;">
+                <img src="../assets/img/blog/march_3.jpg" class="img-fluid"  style="width:25%;">
+                <img src="../assets/img/blog/app_demo.jpg" class="img-fluid"  style="width:20%;">
               </div>
 
-              <h2 class="title">New Waters Grind</h2>
+              <h2 class="title">Lightbulb & Bigger can be better</h2>
 
               <div class="meta-top">
                 <ul>
@@ -96,33 +98,29 @@
 
               <div class="content">
                 <p>
-                    No blog post for last week because the group was on reading week getting ready for midterm exams and various other projects that were in the works 
+                    Big updates to the project and more changes in bound in this weeks blog post
+                </p>
+                <h3>GOOD NEWS!</h3>
+                <p>
+                  The good news, we got the ring light PCB in from JLCPCB. After soldering the LEDs and attaching powering wires we now have the ability to use the light function of our lamp.
+                </p>
+                <h3>BAD NEWS</h3>
+                <p>
+                 Unfortunatley, the down side of using cutting edge technology is the growing pains of being an early adopter. 
+                 Integration of using the new autofocusing camera allows for the end user to place the camera / lamp head in many different angles and potiions while still being able to take a well detailed and perfect picture.
+                 The new camera uses a brand new library that is still in it's alpha stages to take pictures. When testing out the ability to take many pictures in a short amount of time, there was a clear memory problem. 
+                 The MCU doesn't have adequate amount of RAM to store/take pictures and overwrite the previous ones.
+
+                 This issue did not persist when running the same script on the Raspberry Pi 3B+. Rather than spend time to try and get the RPi Zero to work by itself the groupn decided for a minimum viable product with reproducibility and adopt using the RPi 3B+.
                 </p>
 
+                <h3>Future Work</h3>
                 <p>
-                  Lots of progress has been made on the manufacturing of NeedleDrop and getting things up to snuff. 
-                </p>
-
-                <p>
-                  Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
-                  Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
-                  Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
-                </p>
-
-                <h3>Et quae iure vel ut odit alias.</h3>
-                <p>
-                  Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum nesciunt aliquid qui.
-                  Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint consequatur quidem ea.
-                  Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
-                </p>
-
-                <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
-                <p>
-                  Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem facilis hic dolorum dolores vel.
-                  Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut illum ut a quam vitae.
+                  In the hardware of things this means that we need a brand new case design to hold the battery, the new MCU, and a new way attach to existing lamp neck that has been fit the lamp and such.
+                  Futher work needs to be done on the mech side so join the ribbon cable signals to the camera in the lamo head aswell.
                 </p>
                 <p>
-                  Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
+                  For the software side of things, developing the start up script to automatically have the MCU funciton as intended needs to be finalized. As we are now connecting to the internet for file transfer the start up script will have the MCU will boot up, the camera will take a picture and upload to the gdrive. 
                 </p>
 
               </div><!-- End post content -->
@@ -138,7 +136,7 @@
             <div class="post-author d-flex align-items-center">
                 <img src="../assets/img/team/INSERT_YOUR_FIRST_NAME_LOWERCASE.jpg" class="rounded-circle flex-shrink-0" alt="">
               <div>
-                <h4>INSERT YOUR NAME</h4>
+                <h4>Gursimmer Banwait</h4>
                 <p>
                   One of the core members of Team J-GASM and writer of the blog post shown above.
                 </p>
